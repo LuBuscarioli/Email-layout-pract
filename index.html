@@ -7,6 +7,10 @@
 <title>SailChimp HTML Email Template</title>
 <style type="text/css">
 	@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+	:root {
+		--bg-color: #ffeeff;
+		--main-bg-color: #fff;
+	}
 	body {
 		margin: 0;
 	}
@@ -26,13 +30,13 @@
 	.wrapper {
 		width: 100%;
 		table-layout: fixed;
-		background-color: #ffeeff;
+		background-color: var(--bg-color);
 		padding-bottom: 60px;
 	}
 	.main {
 		width: 100%;
 		max-width: 600px;
-		background-color: #fff;
+		background-color: var(--main-bg-color);
 		font-family: sans-serif;
 		color: #4a4a4a;
 		box-shadow: 0 0 25px rgba(0, 0, 0, .15);
