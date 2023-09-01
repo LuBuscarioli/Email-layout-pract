@@ -10,6 +10,8 @@
 	:root {
 		--bg-color: #ffeeff;
 		--main-bg-color: #fff;
+		--primary-store-color: #601B6E;
+		--btn-color: #663d70;
 	}
 	body {
 		margin: 0;
@@ -26,6 +28,11 @@
 	.product-img {
 		border-radius: 3px;
 		box-shadow: 0px 0px 5px #4a4a4a;
+		transition:200ms ease
+	}
+	.product-img:hover {
+		opacity: 0.85;
+		transition:200ms ease;
 	}
 	.wrapper {
 		width: 100%;
@@ -64,12 +71,17 @@
 		font-size: 28px;
 	}
 	.button {
-		background-color: #663d70;
+		background-color: var(--btn-color);
 		color: white;
 		text-decoration: none;
 		padding: 12px 20px;
 		font-weight: bold;
 		border-radius: 5px;
+		transition: 200ms ease-in-out;
+	}
+	.button:hover {
+		background-color: var(--primary-store-color);
+		transition: 200ms ease-in-out;
 	}
 	h4 {
 		font-family: 'Roboto Condensed', sans-serif;
@@ -168,7 +180,7 @@
 						<tr>
 							<td>
 
-								<h3><span style="color: #601B6E;">Sachês Perfumados</span></h3>
+								<h3><span style="color: var(--primary-store-color);">Sachês Perfumados</span></h3>
 								<p style="line-height: 23px; font-size: 15px; padding: 0px 0 22px;">Sabe aquela sensação de prazer e aconchego ao abrir seu guarda-roupa ou cômodas e sentir um perfume leve e gostoso? Essas medalhas são personalizadas e harmonizadas com essências premium e frutas secas como laranja, lavanda, canela em pau e muito mais.</p>
 								<a href="https://maraestelar.com.br/saches-perfumados/" class="button">A partir de R$ 14,98</a>
 
@@ -331,7 +343,7 @@
 							<td style="padding: 30px 20px 40px">
 								
 								<a href="http://www.maraestelar.com.br"><img style="border-radius: 50px;" src="https://maraestelar.com.br/media/4702/content/Mara+Estelar+Logo+horizontal+big.png" alt="" width="250"></a>
-								<p style="padding: 5px 0 3px; font-weight: bold; font-size: 1.1rem; color: #601B6E;">Clique na imagem e visite nossa loja!<br><br>Velas aromáticas, Rechaud, acessórios e muito mais.</p>
+								<p style="padding: 5px 0 3px; font-weight: bold; font-size: 1.1rem; color: var(--primary-store-color);">Clique na imagem e visite nossa loja!<br><br>Velas aromáticas, Rechaud, acessórios e muito mais.</p>
 								<p style="padding: 3px;">Siga-nos nossas redes sociais:</p>
 
 								<a href="https://www.instagram.com/maraestelar/"><img src="https://maraestelar.com.br/media/7070/file/campanha%20email%20imgs/instaIcon.png" alt="" class="social"></a>
